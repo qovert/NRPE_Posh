@@ -22,7 +22,7 @@
 
    For testing purposes, the full script can be run and will produce expected output
    based on whether or not the last Windows Server Backup completed. 
-.EXAMPLE
+
    Function is intended to be run as part of a larger script called by the NSClient service and 
    stored in C:\Program Files\NSClient++\scripts\
 .EXAMPLE
