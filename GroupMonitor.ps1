@@ -38,6 +38,10 @@ function Compare-GroupMembership {
         $_.Trim() -ne "" } |Sort-Object     
 
     # Create comparison file
+    # Delete comparison file if it exists.
+    if ($testSID) {
+        Remove-Item $testSID
+    }
     ForEach ($g in $Groups) {
         Get-ADGroup $g |Get-ADGroupMember |Select-Object sid | 
             Format-Table -HideTableHeaders |Out-File $testSID -Append
