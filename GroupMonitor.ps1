@@ -11,8 +11,8 @@ function Compare-GroupMembership {
     }
     
     # Environment variables
-    $SIDFile = 'C:\Users\ditto\Desktop\sids'
-    $testSID = 'C:\Users\ditto\Desktop\testsid'    
+    $SIDFile = 'C:\Scripts\sids'
+    $testSID = 'C:\Scripts\testsid'    
     $Groups = 'Administrators', 'Domain admins'
 
     # Return states for Nsclient
